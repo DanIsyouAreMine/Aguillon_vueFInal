@@ -1,4 +1,3 @@
-<!-- src/components/DogDetails.vue -->
 <template>
   <div class="container mt-4">
     <div v-if="dog">
@@ -9,7 +8,7 @@
       <p><strong>Description:</strong> {{ dog.description }}</p>
     </div>
     <router-link to="/" class="btn btn-secondary">Back to Home</router-link>
-  </div>
+  </div>  
 </template>
 
 <script>

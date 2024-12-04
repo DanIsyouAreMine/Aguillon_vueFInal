@@ -67,77 +67,104 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  justify-content: right;
 }
 
 h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #2d3748;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e2a47;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 form {
-  background-color: #f9fafb;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 .mb-3 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form-label {
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #4a5568;
+  margin-bottom: 8px;
 }
 
 .form-control {
-  padding: 12px;
+  padding: 14px;
   font-size: 1rem;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border: 2px solid #cbd5e0;
+  border-radius: 10px;
   width: 100%;
   background-color: #fff;
-  transition: border-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .form-control:focus {
-  border-color: #3b82f6;
+  border-color: #6b46c1;
   outline: none;
+  box-shadow: 0 0 10px rgba(107, 70, 193, 0.2);
 }
 
 textarea.form-control {
-  min-height: 120px;
+  min-height: 150px;
+  resize: vertical;
 }
 
 .btn-primary {
-  padding: 12px 24px;
-  font-size: 1.25rem;
-  background-color: #3b82f6;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: purple;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   width: 100%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .btn-primary:hover {
-  background-color: #2563eb;
+  background-color: #5a39a7;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 15px;
+    padding: 20px;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    font-family: Fantasy;
+    color: black;
   }
 
   .form-control {

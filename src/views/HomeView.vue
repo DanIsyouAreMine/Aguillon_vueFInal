@@ -64,7 +64,8 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #2d3748;
+  color: black;
+  font-family: fantasy;
 }
 
 .card {
@@ -98,8 +99,9 @@ h1 {
 }
 
 .card-body p {
-  font-size: 1rem;
-  color: #4a5568;
+  font-size: 30px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .card-body a {
@@ -122,7 +124,7 @@ h1 {
   display: inline-block;
   padding: 12px 24px;
   font-size: 1.25rem;
-  background-color: #3b82f6;
+  background-color: purple;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -148,8 +150,8 @@ p {
 
 .btn-danger {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 1rem;
+  padding: 8px 16px;
+  font-size: 12px;
   background-color: #ef4444;
   color: white;
   text-decoration: none;
@@ -162,7 +164,7 @@ p {
 }
 
 .btn-danger:hover {
-  background-color: #dc2626;
+  background-color: blue;
   transform: scale(1.05);
 }
 
